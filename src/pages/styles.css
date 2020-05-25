@@ -1,0 +1,22 @@
+.longBar{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borderMax{
+    width: 390px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borderRad{
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
