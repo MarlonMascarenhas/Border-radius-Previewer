@@ -29,16 +29,16 @@ function App() {
       </div>
       <div className="boxInput">
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopLeft} />
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopLeft} type="number"/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopRight}/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopRight} type="number"/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomRight}/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomRight} type="number"/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomLeft}/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomLeft} type="number"/>
         </InputGroup>
       </div>
     </div>
