@@ -6,30 +6,25 @@ import './styles.css';
 
 function App() {
   const [topleft, setTopLeft] = useState('50');
-  const [topright, setTopRight] = useState('50');
-  const [bottomright, setBottomRight] = useState('50');
-  const [bottomleft, setBottomLeft] = useState('50');
-  const [radiusStyle, setRadiusStyle] = useState(topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px ');
+  const [topright, setTopRight] = useState('40');
+  const [bottomright, setBottomRight] = useState('30');
+  const [bottomleft, setBottomLeft] = useState('20');
   function atualizaTopLeft(e){
     setTopLeft(e.target.value);
-    setRadiusStyle(topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px ');
   }
   function atualizaTopRight(e){
     setTopRight(e.target.value);
-    setRadiusStyle(topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px ');
   }
   function atualizaBottomRight(e){
     setBottomRight(e.target.value);
-    setRadiusStyle(topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px ');
   }
   function atualizaBottomLeft(e){
     setBottomLeft(e.target.value);
-    setRadiusStyle(topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px ');
   }
   return (
     <div className="longBar">
       <div className= "borderMax">
-        <div className="borderRad" style = {{borderRadius: radiusStyle}}>
+        <div className="borderRad" style = {{borderRadius: topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px '}}>
         </div>
       </div>
       <div className="boxInput">
