@@ -23,22 +23,24 @@ function App() {
   }
   return (
     <div className="longBar">
+      <h1>Border Radius Previewer</h1>
       <div className= "borderMax">
         <div className="borderRad" style = {{borderRadius: topleft +'px ' + topright +'px ' + bottomright +'px ' + bottomleft +'px '}}>
+        <p>borderRadius: {topleft}px {topright}px {bottomright}px {bottomleft}px</p>
         </div>
       </div>
       <div className="boxInput">
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopLeft} type="number"/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopLeft} type="number" value={topleft}/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopRight} type="number"/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaTopRight} type="number" value={topright}/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomRight} type="number"/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomRight} type="number" value={bottomright}/>
         </InputGroup>
         <InputGroup size="lg" className="mb-3"  className="inputProp"> 
-          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomLeft} type="number"/>
+          <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" onChange={atualizaBottomLeft} type="number" value={bottomleft}/>
         </InputGroup>
       </div>
     </div>

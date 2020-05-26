@@ -1,3 +1,7 @@
+h1{
+    color: 	#A9A9A9;
+}
+
 .longBar{
     width: auto;
     height: 100vh;
@@ -18,8 +22,11 @@
 .borderRad{
     background: #73AD21;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
 }
 
 .boxInput{
@@ -38,3 +45,4 @@
 .inputProp input{
     height: 100%;
 }
+
